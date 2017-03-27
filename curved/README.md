@@ -58,13 +58,17 @@ from ``k`` we can now compute d by doing ``(s * k - z mod n) * r^(-1) mod n = d`
 
 The only thing left is to calculate the signature for ``cat flag`` and retrieve the flag.
 
-``
-Solve a puzzle: find an x such that 26 last bits of SHA1(x) are set, len(x)==29 and x[:24]=='a14e7e9fb71dc6ae199c585d'
-a14e7e9fb71dc6ae199c585d0CoSG
-Enter your command:
-15284162780589094897514938829004583199557033736567573187424158962893024593035785187525265081269328574515376501996290 35592731612792516783932035344613252195117525291778339753256725964169293331650412053228745241230914428454647051950171 cat flag
-VolgaCTF{N0nce_1s_me@nt_to_be_used_0n1y_Once}
-Enter your command:
-``
+``Solve a puzzle: find an x such that 26 last bits of SHA1(x) are set, len(x)==29 and x[:24]=='a14e7e9fb71dc6ae199c585d'``
+
+``a14e7e9fb71dc6ae199c585d0CoSG``
+
+``Enter your command:``
+
+``15284162780589094897514938829004583199557033736567573187424158962893024593035785187525265081269328574515376501996290 35592731612792516783932035344613252195117525291778339753256725964169293331650412053228745241230914428454647051950171 cat flag``
+
+``VolgaCTF{N0nce_1s_me@nt_to_be_used_0n1y_Once}``
+
+``Enter your command:``
+
 
 _note: I have added the entry script for solving te dreaded "puzzle" that is required before being able to interact with the challenge, see ``entry.py``_
