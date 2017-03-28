@@ -54,9 +54,20 @@ Now calcualte ``k = (z - zmark) / (s - smark)`` in the modulus order of the NIST
 
 ``k = (z - zmark) * (s - smark)^(-1) mod n``
 
-from ``k`` we can now compute d by doing ``(s * k - z mod n) * r^(-1) mod n = d`` which is the private key
+from ``k`` we can now compute ``d`` (all calucaltions are made ``mod n``:
+From step 4. we have:
 
-The only thing left is to calculate the signature for ``cat flag`` and retrieve the flag.
+``s = k^(-1) * (z + r * d)``
+
+``<=> s * k =  (z + r * d)``
+
+``<=> s * k - z = r * d``
+
+``<=> (s * k - z mod n) * r^(-1) mod n = d`` 
+
+which is the private key
+
+The only thing left is to calculate the signature for ``cat flag`` using the code provided in the challenge and retrieve the flag.
 
 ``Solve a puzzle: find an x such that 26 last bits of SHA1(x) are set, len(x)==29 and x[:24]=='a14e7e9fb71dc6ae199c585d'``
 
